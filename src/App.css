@@ -1,38 +1,456 @@
-.App {
-  text-align: center;
+*{
+    font-family: 'Sora',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .form{
+    position: relative;
+    
+    height: 3rem;
+    margin-top: 0px;
+    overflow: visible;
+    /* padding: 10px; */
   }
+  .form2{
+    position: relative;
+    
+    height: 3rem;
+    margin-top: -150px;
+    overflow: visible;
+    /* padding: 10px; */
+  }
+  .form .input{
+    position: relative;
+    
+    width: 100%;
+    height: 200px;
+    border: 2px solid #11101d;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    color: black;
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+  }
+  .form2 .input2{
+    position: relative;
+    
+    width: 50%;
+    height: 20px;
+    border: 2px solid #11101d;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    color: black;
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+  }
+  .form .input:hover{
+    border-color: #0693e3;
+  }
+  .form2 .input2:hover{
+    border-color: #0693e3;
+  }
+  .form_input:focus ~ .form_label{
+    color: #0693e3;
+  }
+  .form_input2:focus ~ .form_label2{
+    color: #0693e3;
+  }
+  .form .input:focus{
+    border-color: green;
+  }
+  .form2 .input2:focus{
+    border-color: green;
+  }
+  .form .label{
+    position: absolute;
+    font-weight: 600;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    color: #11101d;
+    cursor: text;
+    transition: top 200ms ease-in,
+      left 200ms ease-in,
+      font-size 200ms ease-in;
+  }
+  .form2 .label2{
+    position: absolute;
+    font-weight: 400;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    color: #11101d;
+    cursor: text;
+    transition: top 200ms ease-in,
+      left 200ms ease-in,
+      font-size 200ms ease-in;
+  }
+  /* .form_input:focus ~ .form_label,
+  .form_input:not(:placeholder-shown)
+  .form_input:not(:focus) ~ .form_label */
+  .form_input:not(:placeholder-shown) ~ .form_label
+  {
+    top: -0.5rem;
+    font-size: 1.5rem;
+    left: 0.8rem;
+    
+    background-color: #fff;
+    
+  }
+  .form_input2:not(:placeholder-shown) ~ .form_label2
+  {
+    top: -0.5rem;
+    font-size: 1.5rem;
+    left: 0.8rem;
+    
+    background-color: #fff;
+    
+  }
+  .form_input:focus ~ .form_label
+  {
+    top: -0.5rem;
+    font-size: 1.2rem;
+    left: 0.8rem;
+    color:orangered;
+    background-color: #fff;
+  }
+  .form_input2:focus ~ .form_label2
+  {
+    top: -0.5rem;
+    font-size: 1.2rem;
+    left: 0.8rem;
+    color:orangered;
+    background-color: #fff;
+  }
+  .form_box{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    border: 3px;
+    border-style:dotted;
+    border-color: black;
+    padding: 5px;
+    padding-left: 30px;
+    width: 900px;
+    height: 300px;
+  }
+  .icon_label{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .bx:hover {
+    cursor: pointer;
+  }
+  .selected{
+    color:aqua;
+  }
+  .notselected{
+    color: transparent;
+  }
+  .status .text{
+    align-self: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #1d1b31;
+    margin-top:  12px;
+  }
+  .container {
+    
+    height: 400px;
+    position: relative;
+    border: 3px solid white;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid white;
+  }
+
+  .ques{
+    margin: 0;
+    font-family:  Roboto, sans-serif;
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px+2vmin);
+    color: white;   
+}
+.app-content{
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px+2vmin);
+    color: white;
+    overflow: auto;
+}
+.button-area button{
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.pdf-page {
+  position: relative;
+  margin: 0 auto;
+
+  padding: 0.4in 0.3in;
+
+  color: #333;
+
+  background-color: #fff;
+
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+  box-sizing: border-box;
+}
+
+.pdf-header {
+  padding-bottom: 0.2in;
+
+  margin-bottom: 0.3in;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.invoice-number {
+  padding-top: 0.1in;
+  font-family: Alata;
+  font-weight: bold;
+  float: right;
+}
+
+.pdf-footer {
+  position: absolute;
+
+  bottom: 0.25in;
+
+  left: 0.3in;
+
+  right: 0.3in;
+
+  padding-top: 0.05in;
+
+  border-top: 1px solid #e5e5e5;
+
+  font-weight: bold;
+  font-family: Alata;
+  text-align: left;
+  
+  color: #787878;
+}
+.pdf-footer .name{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.pdf-footer .desg{
+  font-size: 0.9rem;
+  margin: 0;
+}
+.pdf-footer .inst{
+  font-size: 0.9rem;
+  margin: 0;
+}
+.addresses {
+  font-size: 12px;
+}
+
+.addresses:after {
+  display: block;
+
+  content: "";
+
+  clear: both;
+}
+
+.for {
+  float: left;
+}
+
+.from {
+  float: right;
+}
+
+.addresses p {
+  color: #787878;
+
+  padding: 0.05in 0;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.addresses p:first-of-type {
+  border-top: 0;
+}
+
+.pdf-body {
+  margin-top: 0.3in;
+}
+
+.company-logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  
+  color: #8bc34a;
+}
+
+.signature {
+  padding-top: 0.3in;
+}
+
+/* Dimensions other than px and em should be divided by 1.33 for the proper PDF output */
+
+.size-a4 {
+  width: 6.2in;
+
+  height: 8.7in;
+}
+
+.size-letter {
+  width: 6.3in;
+
+  height: 8.2in;
+}
+
+.size-executive {
+  width: 5.4in;
+
+  height: 7.8in;
+
+  font-size: 12px;
+}
+
+.size-executive .pdf-header {
+  margin-bottom: 0.1in;
+}
+.box {
+  padding: 1em;
+
+  background-color: rgba(20, 53, 80, 0.038);
+  
+  border: 1px solid rgba(20, 53, 80, 0.05);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+}
+.box-col{
+  margin-right: 40px;
+}
+@font-face {
+  font-family:  "DejaVu Sans";
+  src:  url("https://kendo.cdn.telerik.com/2017.2.621/styles/fonts/DejaVu/DejaVuSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family:  "DejaVu Sans";
+  font-weight:  bold;
+  src:  url("https://kendo.cdn.telerik.com/2017.2.621/styles/fonts/DejaVu/DejaVuSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family:  "DejaVu Sans";
+  font-style:  italic;
+  src:  url("https://kendo.cdn.telerik.com/2017.2.621/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf") format("truetype");
+}
+@font-face {
+  font-family:  "Jost";
+  font-style:  italic;
+  src:  url("./font/jost.ttf") format("truetype");
+}
+@font-face {
+  font-family:  "Alata";
+  font-weight:  bold;
+  font-style:  italic;
+  src:  url("https://fonts.googleapis.com/css2?family=Alata&display=swap") format("truetype");
+}
+.boxcenter{
+  display: flex;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.formd{
+  position: relative;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 0px;
+  margin-right: 5px;
+  overflow: visible;
+  /* padding: 10px; */
+}
+.formd .inputd{
+  position: relative;
+  
+  width: 100%;
+  height: 100%;
+  border: 2px solid #11101d;
+  border-radius: 5px;
+  font-family: Alata;
+  font-size: 15px;
+  color: black;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+.formd .inputd:hover{
+  border-color: #d5e009;
+}
+.formd .inputd:focus{
+  border-color: green;
 }
 
-.App-link {
-  color: #61dafb;
+.formd .labeld{
+  position: absolute;
+  font-weight: 600;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: #11101d;
+  cursor: text;
+  z-index: -10;
+  transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown)
+.form_input:not(:focus) ~ .form_label */
+.form_inputd:not(:placeholder-shown) ~ .form_labeld
+{
+  top: -0.8rem;
+  font-size: 0.8rem;
+  left: 0.2rem;
+  
+  background-color: #fff;
+  
+}
+.form_inputd:focus ~ .form_labeld
+{
+  top: -0.8rem;
+  font-size: 0.8rem;
+  left: 0.2rem;
+  color:orangered;
+  background-color: transparent;
+}
+.back:hover{
+  cursor: pointer;
 }
