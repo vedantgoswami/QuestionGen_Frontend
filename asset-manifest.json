@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/QuestionGen_Frontend/static/css/main.e2f72fa5.css",
-    "main.js": "/QuestionGen_Frontend/static/js/main.2e2367be.js",
+    "main.js": "/QuestionGen_Frontend/static/js/main.81e5f505.js",
     "static/media/video.mp4": "/QuestionGen_Frontend/static/media/video.34b6f66bdbbf8c8e3f58.mp4",
     "static/media/jost.ttf": "/QuestionGen_Frontend/static/media/jost.4bb3ef274c32dacc8bfe.ttf",
     "static/media/logo.png": "/QuestionGen_Frontend/static/media/logo.4c34954d9946f6677033.png",
     "static/media/Logo-Icon-600x600.png": "/QuestionGen_Frontend/static/media/Logo-Icon-600x600.e86865fbfe8b66d0440f.png",
     "index.html": "/QuestionGen_Frontend/index.html",
     "main.e2f72fa5.css.map": "/QuestionGen_Frontend/static/css/main.e2f72fa5.css.map",
-    "main.2e2367be.js.map": "/QuestionGen_Frontend/static/js/main.2e2367be.js.map"
+    "main.81e5f505.js.map": "/QuestionGen_Frontend/static/js/main.81e5f505.js.map"
   },
   "entrypoints": [
     "static/css/main.e2f72fa5.css",
-    "static/js/main.2e2367be.js"
+    "static/js/main.81e5f505.js"
   ]
 }
