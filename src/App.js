@@ -5,7 +5,7 @@ import FrontendPage from './pages/FrontendPage'
 import QuestionPage from './pages/QuestionPage';
 import NotesPage from './pages/NotesPage';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
