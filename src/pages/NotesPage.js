@@ -13,6 +13,7 @@ import Header from '../components/Header';
 import Swal from 'sweetalert2';
 import ReactLoading from 'react-loading';
 import ServerBox from '../components/ServerBox';
+
 const NotesPage = () => {
   const navigate=useNavigate();
   const [value, setValue] = React.useState('Controlled');
