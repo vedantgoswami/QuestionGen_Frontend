@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/quesgen/static/css/main.0967ec15.css",
+    "main.js": "/quesgen/static/js/main.e804119c.js",
+    "static/media/video.mp4": "/quesgen/static/media/video.34b6f66bdbbf8c8e3f58.mp4",
+    "static/media/jost.ttf": "/quesgen/static/media/jost.4bb3ef274c32dacc8bfe.ttf",
+    "static/media/logo.png": "/quesgen/static/media/logo.4c34954d9946f6677033.png",
+    "static/media/Logo-Icon-600x600.png": "/quesgen/static/media/Logo-Icon-600x600.e86865fbfe8b66d0440f.png",
+    "index.html": "/quesgen/index.html",
+    "main.0967ec15.css.map": "/quesgen/static/css/main.0967ec15.css.map",
+    "main.e804119c.js.map": "/quesgen/static/js/main.e804119c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0967ec15.css",
+    "static/js/main.e804119c.js"
+  ]
+}
